@@ -1,0 +1,17 @@
+name: XinghaiMC-Report
+version: '${project.version}'
+main: org.xinghaimc.report.Main
+commands:
+  report:
+    description: 提交反馈/举报。
+    usage: /<command> <playername> <reason>
+    permission: xinghaimc.report
+  handle:
+    description: 处理或查看反馈。
+    usage: /<command> [report-id]
+    permission: xinghaimc.report.handle
+permissions:
+  xinghai.report:
+    default: true
+  xinghai.report.handle:
+    default: op
